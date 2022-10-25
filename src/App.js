@@ -6,7 +6,8 @@ import './style.css';
 
 function App() {
 
-  const [input, setInput] = useState('')
+  const [input, setInput] = useState('');
+  const [cep, setCep] = useState({});
 
    async function handleSearch(){
     if(input === ''){
