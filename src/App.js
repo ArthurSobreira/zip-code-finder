@@ -1,10 +1,28 @@
-import { useState } from 'react'
+import api from './services/api';
+import { useState } from 'react';
 import { BiSearchAlt } from 'react-icons/bi';
 import './style.css';
+
 
 function App() {
 
   const [input, setInput] = useState('')
+
+   async function handleSearch(){
+    if(input === ''){
+      alert('Digite algum CEP!')
+      return;
+    }
+
+    try{
+      const response = await api.get(`${input}/json`);
+      console.log(response.data)
+
+    }catch{
+      alert("Ops, ocorreu algum erro...")
+    }
+
+  }
 
   return (
     <div className="container">
@@ -18,7 +36,7 @@ function App() {
         onChange={(e) => setInput(e.target.value)}
         />
 
-        <button className="buttonSearch">
+        <button className="buttonSearch" onClick={handleSearch}>
           <BiSearchAlt size={25} color="#FFF"/>
         </button>
       </div>
