@@ -1,7 +1,7 @@
 function App() {
   return (
-    <div className="App">
-      <h1>Teste Projeto</h1>
+    <div className="container">
+      <h1 className="title">Buscador CEP</h1>
     </div>
   );
 }
