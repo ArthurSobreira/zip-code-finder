@@ -22,6 +22,15 @@
     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
+.containerInput input {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    margin-right: 8px;
+}
+
 @keyframes flipTitle {
     from{
         transform: rotateX(90deg);
