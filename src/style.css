@@ -45,6 +45,16 @@
     transform: scale(1.2);
 }
 
+.main {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 500px;
+    border-radius: 8px;
+}
+
 @keyframes flipTitle {
     from{
         transform: rotateX(90deg);
