@@ -50,9 +50,20 @@
     justify-items: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 50px;
     background-color: #fff;
     width: 500px;
     border-radius: 8px;
+}
+
+.main h2 {
+    margin: 16px 0;
+    font-size: 39px;
+}
+
+.main span {
+    margin-bottom: 16px;
+    font-weight: bold;
 }
 
 @keyframes flipTitle {
