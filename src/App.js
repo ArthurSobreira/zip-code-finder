@@ -1,4 +1,5 @@
-import { BiSearchAlt } from 'react-icons/bi'
+import { BiSearchAlt } from 'react-icons/bi';
+import './style.css';
 
 function App() {
   return (
