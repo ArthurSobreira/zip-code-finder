@@ -44,15 +44,16 @@ function App() {
         </button>
       </div>
 
-      <main className='main'>
-        <h2>CEP: 00000000</h2>
+      {Object.keys(cep).length > 0 && (
+        <main className='main'>
+        <h2>CEP: {cep.cep}</h2>
 
-        <span>Rua Teste algum</span>
-        <span>Complemento: Algum Complemento</span>
-        <span>Bairro: Algum Bairro</span>
-        <span>Cidade: Alguma Cidade</span>
-
+        <span>{cep.logradouro}</span>
+        <span>{cep.complemento}</span>
+        <span>{cep.bairro}</span>
+        <span>{cep.localidade} - {cep.uf}</span>
       </main>
+      )}
     </div>
   );
 }
