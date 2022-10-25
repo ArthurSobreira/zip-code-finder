@@ -15,6 +15,16 @@ function App() {
           <BiSearchAlt size={25} color="#FFF"/>
         </button>
       </div>
+
+      <main className='main'>
+        <h2>CEP: 00000000</h2>
+
+        <span>Rua Teste algum</span>
+        <span>Complemento: Algum Complemento</span>
+        <span>Bairro: Algum Bairro</span>
+        <span>Cidade: Alguma Cidade</span>
+
+      </main>
     </div>
   );
 }
