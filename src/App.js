@@ -1,3 +1,5 @@
+import { BiSearchAlt } from 'react-icons/bi'
+
 function App() {
   return (
     <div className="container">
@@ -8,6 +10,10 @@ function App() {
         type='text'
         placeholder="Digite seu CEP..."
         />
+
+        <button className="buttonSearch">
+          <BiSearchAlt size={25} color="#FFF"/>
+        </button>
       </div>
     </div>
   );
