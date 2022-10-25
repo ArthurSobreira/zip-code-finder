@@ -1,7 +1,11 @@
+import { useState } from 'react'
 import { BiSearchAlt } from 'react-icons/bi';
 import './style.css';
 
 function App() {
+
+  const [input, setInput] = useState('')
+
   return (
     <div className="container">
       <h1 className="title">Buscador CEP</h1>
@@ -10,6 +14,8 @@ function App() {
         <input
         type='text'
         placeholder="Digite seu CEP..."
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
         />
 
         <button className="buttonSearch">
