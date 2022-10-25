@@ -16,10 +16,12 @@ function App() {
 
     try{
       const response = await api.get(`${input}/json`);
-      console.log(response.data)
+      setCep(response.data)
+      setInput('');
 
     }catch{
       alert("Ops, ocorreu algum erro...")
+      setInput('')
     }
 
   }
