@@ -50,7 +50,7 @@
     justify-items: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 40px;
     background-color: #fff;
     width: 500px;
     border-radius: 8px;
@@ -75,3 +75,13 @@
     }
 }
 
+@media (max-width: 570px){
+    .title {
+        font-size: 65px;
+    }
+
+    .main {
+        width: 80%;
+        min-height: 250px;
+    }
+}
